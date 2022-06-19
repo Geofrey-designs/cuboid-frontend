@@ -21,6 +21,7 @@ const About = () => {
                 <div className='border py-8 rounded-xl shadow-xl' >
                     <p className='text-6xl font-bold text-indigo-600'>100K</p>
                     <p className='text-gray-400 mt-2'>Transactions</p>
+                    
                 </div>
             </div>
         </div>

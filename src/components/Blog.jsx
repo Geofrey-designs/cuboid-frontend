@@ -1,107 +1,86 @@
 import React from 'react'
+import driving from '../assets/driving2.png'
+
 
 function Blog() {
   return (
-      <div name='blog'>
-        <div className='grid place-content-center'>
-        <h1 className='class="inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight 
-            dark:text-slate-200font-black'>Blog posts</h1>
-        </div>
-        {/* cards*/}
-        <div className="md:h-full flex items-center">
-          <div className='container px-5 py-24 mx-auto'>
-          <div className='flex flex-wrap -m-4'>
-            {/* card 1 */}
-              <div className='p-4 sm:w-full lg:w-1/4'>
-                <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden'>
-                  <img class="lg:h-48 md:h-24 w-full object-cover object-center"
-                    src="https://picsum.photos/id/188/720/400" alt="blog"></img>
-                  <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
-                    
-                    <h1 class="text-2xl font-semibold mb-3">Blog post</h1>
-                    <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    <h2 class="text-base font-medium text-indigo-300 mb-1">October 29,
-                                  2021</h2>
-                    
-                  </div>
-                </div>
-            </div>
-            {/* card 2 */}
-             <div className='p-4 sm:w-full lg:w-1/4'>
-                <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden'>
-                  <img class="lg:h-48 md:h-24 w-full object-cover object-center"
-                    src="https://picsum.photos/id/188/720/400" alt="blog"></img>
-                  <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
-                    
-                    <h1 class="text-2xl font-semibold mb-3">Blog post</h1>
-                    <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    <h2 class="text-base font-medium text-indigo-300 mb-1">October 29,
-                                  2021</h2>
-                    
-                  </div>
-                </div>
-            </div>
-            {/* card 3 */}
-            <div className='p-4 sm:w-full lg:w-1/4'>
-                <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden'>
-                  <img class="lg:h-48 md:h-24 w-full object-cover object-center"
-                    src="https://picsum.photos/id/188/720/400" alt="blog"></img>
-                  <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
-                    
-                    <h1 class="text-2xl font-semibold mb-3">Blog post</h1>
-                    <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    <h2 class="text-base font-medium text-indigo-300 mb-1">October 29,
-                                  2021</h2>
-                    
-                  </div>
-                </div>
-            </div>
-            {/* card 4 */}
-            <div className='p-4 sm:w-full lg:w-1/4'>
-                <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden'>
-                  <img class="lg:h-48 md:h-24 w-full object-cover object-center"
-                    src="https://picsum.photos/id/188/720/400" alt="blog"></img>
-                  <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
-                    
-                    <h1 class="text-2xl font-semibold mb-3">Blog post</h1>
-                    <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    <h2 class="text-base font-medium text-indigo-300 mb-1">October 29,
-                                  2021</h2>
-                    
-                  </div>
-                </div>
-            </div>
-            {/* card 5 */}
-            <div className='p-4 sm:w-full lg:w-1/4'>
-                <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden'>
-                  <img class="lg:h-48 md:h-24 w-full object-cover object-center"
-                    src="https://picsum.photos/id/188/720/400" alt="blog"></img>
-                  <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
-                    
-                    <h1 class="text-2xl font-semibold mb-3">Blog post</h1>
-                    <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    <h2 class="text-base font-medium text-indigo-300 mb-1">October 29,
-                                  2021</h2>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>               
+      <div name='blog' className='max-w-screen-md mx-auto'>
+        <h1 className='font-bold text-4xl text-center pt-5'>News</h1>
+        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+          
+    {/* start of cards */}
+    {/* <!--Card 1--> */}
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <img class="w-full" src={driving} alt="Mountain"/>
+      <div class="px-6 py-4">
+        {/* <div class="font-bold text-xl mb-2">Mountain</div> */}
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, distinctio!
+        </p>
+        <p className='pt-4 italic text-[#3538d6]'>date goes here</p>
+
       </div>
       
+    </div>
+    {/* <!--Card 2--> */}
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <img class="w-full" src={driving} alt="River"/>
+      <div class="px-6 py-4">
+        {/* <div class="font-bold text-xl mb-2">River</div> */}
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, distinctio!
+          </p>
+          <p className='pt-4 italic text-[#3538d6]'>date goes here</p>
+      </div>
+      
+    </div>
+
+    {/* <!--Card 3--> */}
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <img class="w-full" src={driving} alt="Forest"/>
+      <div class="px-6 py-4">
+        {/* <div class="font-bold text-xl mb-2">Forest</div> */}
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, distinctio!
+        </p>
+        <p className='pt-4 italic text-[#3538d6]'>date goes here</p>
+      </div>    
+     
+    </div>
+
+     {/* <!--Card 4--> */}
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <img class="w-full" src={driving} alt="Forest"/>
+      <div class="px-6 py-4">
+        {/* <div class="font-bold text-xl mb-2">Forest</div> */}
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, distinctio!
+        </p>
+        <p className='pt-4 italic text-[#3538d6]'>date goes here</p>
+      </div>    
+     
+    </div>
+    {/* <!--Card 5--> */}
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <img class="w-full" src={driving} alt="Forest"/>
+      <div class="px-6 py-4">
+        {/* <div class="font-bold text-xl mb-2">Forest</div> */}
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, distinctio!
+        </p>
+        <p className='pt-4 italic text-[#3538d6]'>date goes here</p>
+      </div>    
+     
+    </div>
 
 
+    {/* end of cards */}
 
 
-
-
-    </div>  
+    
+  </div>
+</div>
+     
 
     
           
