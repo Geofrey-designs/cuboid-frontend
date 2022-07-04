@@ -1,24 +1,27 @@
 import About from './components/About';
-import AllInOne from './components/AllInOne';
+import KeepingSafe from './components/KeepingSafe';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar'
-// import Pricing from './components/Pricing';
-// import Support from './components/Support'
+
+import Support from './components/Support'
 import Blog from './components/Blog';
 import Ourapp from "./components/Ourapp";
+import Protecting from './components/Protecting';
 function App() {
   return (
     <>
       
       <Navbar />      
       <Hero />
-      <Ourapp />      
+      <Ourapp />
+      <Protecting />      
       {/* <Support /> */}
-      {/* <AllInOne /> */}
-      {/* <Pricing /> */}
+      <KeepingSafe />
+      
+      
       <Blog />
-      <About />
+      {/* <About /> */}
       <Footer />
     </>
   );

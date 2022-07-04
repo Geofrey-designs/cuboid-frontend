@@ -16,10 +16,18 @@
 @layer components {
   .card {
     background-color: theme('colors.white');
-    border-radius: theme('borderRadius.lg');
+    /* border-radius: theme('borderRadius.lg'); */
     padding: theme('spacing.6');
-    /* box-shadow: theme('boxShadow.xl'); */
+    box-shadow: theme('boxShadow.xl');
   }
+  .objects {
+      position: absolute;
+      left: 669.4px;
+      top: 0.86px;
+      width: 583.6px;
+      height: 855.14px;
+      
+    }
 
   /* ... */
 }
